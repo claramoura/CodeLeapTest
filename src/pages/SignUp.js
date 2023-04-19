@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Card, Form, Button } from "react-bootstrap";
+import { Container, Card, Form, Button, Stack } from "react-bootstrap";
 
 function SignUp() {
 
