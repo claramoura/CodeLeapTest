@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Card, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Card, Form, Button } from "react-bootstrap";
 
 function SignUp() {
 
@@ -23,34 +23,32 @@ function SignUp() {
   return (
     <>
     <Container>
-      <Row>
-        <Col md={{ span: 6, offset: 4 }}>
-          <Card style={{ width: "30rem" }}>
-            <Card.Body>
-              <Card.Title>Welcome to CodeLeap network!</Card.Title>
-              <Form>
-                <Form.Group className="mb-3" controlId="formBasicUsername">
-                  <Form.Label>Please enter your username</Form.Label>
-                  <Form.Control 
+      <Stack gap={4} className="col-md-5 mx-auto">
+        <Card style={{ width: "30rem" }}>
+          <Card.Body>
+            <Card.Title>Welcome to CodeLeap network!</Card.Title>
+            <Form>
+              <Form.Group className="mb-3" controlId="formBasicUsername">
+                <Form.Label>Please enter your username</Form.Label>
+                <Form.Control 
                   type="text" 
                   placeholder="John Doe"
                   onInput={(e) => handleInput(e.target.value)}
-                  />
-                </Form.Group>
-                <Button
-                  className="float-end" 
-                  variant="primary" 
-                  type="button"
-                  disabled={disabled}
-                  onClick={() => handleEnter()}
-                >
-                  ENTER
-                </Button>
-              </Form>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+                />
+              </Form.Group>
+              <Button
+                className="float-end" 
+                variant="primary" 
+                type="button"
+                disabled={disabled}
+                onClick={() => handleEnter()}
+              >
+                ENTER
+              </Button>
+            </Form>
+          </Card.Body>
+        </Card>
+      </Stack>
     </Container>
     </>
   );

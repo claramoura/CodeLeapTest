@@ -1,12 +1,11 @@
 import { Outlet } from 'react-router-dom'; 
 import { Container } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom';
 import Header from '../components/Header.js';
 
-function Layout() {
+function Layout(props) {
   return (
     <>
-    {useLocation().pathname !== '/signUp' &&
+    {props.user &&
       <Header />  
     } 
     <main className="py-3">
