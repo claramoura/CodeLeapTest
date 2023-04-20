@@ -43,7 +43,7 @@ function EditModal(props) {
               <Form.Control 
                 as="textarea"
                 rows={3} 
-                value={title}
+                value={content}
                 contentEditable={true}
                 onInput={(e) => setContent(e.target.value)}
               />

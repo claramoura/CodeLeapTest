@@ -6,11 +6,11 @@ import axios from "axios";
 
 function Main(props) {
 
-  const [posts, setPosts] = useState([]);
-  const [fetched, setFetched] = useState(false);
-  const [next, setNext] = useState(null);
+  const [posts, setPosts] = useState([])
+  const [fetched, setFetched] = useState(false)
+  const [next, setNext] = useState(null)
 
-  const user = props.user;
+  const user = props.user
 
 
   // Gets the first 10 posts

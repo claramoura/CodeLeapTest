@@ -24,7 +24,7 @@ function SignUp() {
     <>
     <Container>
       <Stack gap={4} className="col-md-5 mx-auto">
-        <Card style={{ width: "30rem" }}>
+        <Card>
           <Card.Body>
             <Card.Title>Welcome to CodeLeap network!</Card.Title>
             <Form>
